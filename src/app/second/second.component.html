@@ -1,0 +1,20 @@
+le nombre des membres du groupe est: {{groupe.length}}
+<br>
+<ul>
+  <li *ngFor="let membre of groupe">
+    {{membre}}
+  </li>
+</ul>
+<table>
+  <tr><td colspan="3" align="center"><h2>liste des membres</h2></td></tr>
+  <tr>
+    <td>Nom</td>
+    <td>Prénom</td>
+    <td>Fonction</td>
+  </tr>
+  <tr *ngFor="let dev of effectif">
+    <td>{{dev.nom}}</td>
+    <td>{{dev.prenom}}</td>
+    <td>{{dev.fonction}}</td>
+  </tr>
+</table>
