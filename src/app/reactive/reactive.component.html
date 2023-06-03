@@ -3,7 +3,7 @@
 nom:<input [(ngModel)]="nom" required type="text" name="nom" ><br>
 prénom:<input [(ngModel)]="prenom" required type="text" name="prenom" ><br>
 age:<input type="number" [(ngModel)]="age" min="1" name="age" ><br>
-<button  [disabled]="myform.invalid" type="submit">Envoyer</button>
+<button   [disabled]="myform.invalid" type="submit">Envoyer</button>
 </form>
 {{nom+" "+ prenom+" "+age}}
 {{message}}
