@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./reactive.component.css']
 })
 export class ReactiveComponent {
-
+  nom="";
+  prenom="";
+  age=20;
+  message="";
+  evaluate() {
+    if(this.age>=18)
+    this.message="majeur"
+    else
+    this.message="mineur"
+  }
 }
